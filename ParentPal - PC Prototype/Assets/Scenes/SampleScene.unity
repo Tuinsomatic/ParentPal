@@ -194,7 +194,7 @@ MonoBehaviour:
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -381,7 +381,7 @@ GameObject:
   - component: {fileID: 969029541}
   - component: {fileID: 969029540}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Option2Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -437,7 +437,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaag
 --- !u!222 &969029541
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -520,7 +520,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 6dcf874985bee024b806373a58f41c6a, type: 3}
+      - m_Target: {fileID: 0}
         m_MethodName: 
         m_Mode: 1
         m_Arguments:
@@ -576,8 +576,6 @@ GameObject:
   - component: {fileID: 1229863882}
   - component: {fileID: 1229863884}
   - component: {fileID: 1229863883}
-  - component: {fileID: 1229863886}
-  - component: {fileID: 1229863885}
   m_Layer: 5
   m_Name: Question
   m_TagString: Untagged
@@ -601,7 +599,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -142}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 1020.5, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1229863883
 MonoBehaviour:
@@ -629,42 +627,19 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaag
 --- !u!222 &1229863884
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1229863881}
---- !u!114 &1229863885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1229863881}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4475819650ce7f846af2daba737d04d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1229863886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1229863881}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dcf874985bee024b806373a58f41c6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scenes: {fileID: 1229863885}
 --- !u!1 &1389334278
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,7 +651,7 @@ GameObject:
   - component: {fileID: 1389334281}
   - component: {fileID: 1389334280}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Option1Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -732,7 +707,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: aaaaaaaaaaaaaaa
 --- !u!222 &1389334281
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -750,6 +725,8 @@ GameObject:
   - component: {fileID: 1468106654}
   - component: {fileID: 1468106653}
   - component: {fileID: 1468106652}
+  - component: {fileID: 1468106656}
+  - component: {fileID: 1468106657}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -835,3 +812,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1468106656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1468106651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dcf874985bee024b806373a58f41c6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenes: {fileID: 1468106657}
+--- !u!114 &1468106657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1468106651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4475819650ce7f846af2daba737d04d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
