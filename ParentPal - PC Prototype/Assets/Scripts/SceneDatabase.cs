@@ -11,6 +11,11 @@ public class SceneDatabase : MonoBehaviour {
     public Scene scene3 = new Scene();
     public Scene scene4 = new Scene();
 
+    public Scene current;
+
+    public Button op1;
+    public Button op2;
+//---------------------------------------------------------------------------------------------------------------------------------------
     private void Start()
     {
         scene1.question = "Teen sat playing on games console in messy bedroom. Carer knocks on the door and walks in…";
@@ -21,18 +26,33 @@ public class SceneDatabase : MonoBehaviour {
 
 
         scene2.question = "Teen shouts back at carer";
-
+        scene2.optionT.Add("endgame");
+        scene2.optionT.Add("spoilers");
+        scene2.optionD.Add(scene1);
+        scene2.optionD.Add(scene1);
 
         scene3.question = "Teen replies, ok carer no worries";
+        scene3.optionT.Add("eat shit");
+        scene3.optionT.Add("i hate unity");
+        scene3.optionD.Add(scene1);
+        scene3.optionD.Add(scene1);
 
 
         scene4.question = "You storm out";
 
+        current = scene1;
+        //for (int i = 0; i <= current.optionT.Count; i++)
+        //{
+        //    GameObject button = GameObject.Find("Option" + (i + 1).ToString());
+        //    button.onClick.AddListener
+        //}
+        
+        op1.onClick.AddListener(() => ChangeScene(GameObject.Find("Option1Text").GetComponent<Destination>().nextDest));
+        op2.onClick.AddListener(() => ChangeScene(GameObject.Find("Option2Text").GetComponent<Destination>().nextDest));
 
-        ChangeScene(scene1);
-        //scenes[0] = new Scene();
+        ChangeScene(current);
     }
-
+//---------------------------------------------------------------------------------------------------------------------------------------
     public void ChangeScene(Scene scene) //the fn used to change scenes when a button is pressed
     {
         GameObject q = GameObject.Find("Question"); //Question is the Text UI element at the top of the screen
@@ -42,10 +62,18 @@ public class SceneDatabase : MonoBehaviour {
         {
             GameObject button = GameObject.Find("Option" + (i+1).ToString() + "Text");
             button.GetComponent<Text>().text = scene.optionT[i];
+            button.GetComponent<Destination>().nextDest = scene.optionD[i];
         }
+
+        current = scene;
+    }
+//---------------------------------------------------------------------------------------------------------------------------------------
+    private void Update()
+    {
+
     }
 }
-
+//---------------------------------------------------------------------------------------------------------------------------------------
 public class Scene
 {
     public string question;
