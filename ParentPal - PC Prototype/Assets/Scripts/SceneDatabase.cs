@@ -33,10 +33,7 @@ public class SceneDatabase : MonoBehaviour {
         scene2.optionD.Add(scene4);
 
         scene3.question = "Both you and teen are angry and upset. Teen shuts down, refuses to go out. Evening ruined";
-        scene3.optionT.Add("Go back");
-        scene3.optionT.Add("Go back");
-        scene3.optionD.Add(scene1);
-        scene3.optionD.Add(scene1);
+        scene3.isEnd = true;
 
 
         scene4.question = "Teen replies: \"no worries\". 15 mins later, carer comes back in to remind teen to be ready soon.";
@@ -46,10 +43,7 @@ public class SceneDatabase : MonoBehaviour {
         scene4.optionD.Add(scene5);
 
         scene5.question = "Teen is ready and downstairs on time. Evening out goes forward as planned.";
-        scene5.optionT.Add("Scenario over");
-        scene5.optionT.Add("Scenario over");
-        scene5.optionD.Add(scene5);
-        scene5.optionD.Add(scene5);
+        scene5.isEnd = true;
 
         current = scene1;
         //for (int i = 0; i <= current.optionT.Count; i++)
@@ -69,11 +63,22 @@ public class SceneDatabase : MonoBehaviour {
         GameObject q = GameObject.Find("Question"); //Question is the Text UI element at the top of the screen
         q.GetComponent<Text>().text = scene.question; //Replace the text on it with the question text from scene
 
-        for (int i = 0; i<=scene.optionT.Count; i++)
+        if (scene.isEnd == false)
         {
-            GameObject button = GameObject.Find("Option" + (i+1).ToString() + "Text");
-            button.GetComponent<Text>().text = scene.optionT[i];
-            button.GetComponent<Destination>().nextDest = scene.optionD[i];
+            for (int i = 0; i <= scene.optionT.Count; i++)
+            {
+                GameObject buttonText = GameObject.Find("Option" + (i + 1).ToString() + "Text");
+                buttonText.GetComponent<Text>().text = scene.optionT[i];
+                buttonText.GetComponent<Destination>().nextDest = scene.optionD[i];
+            }
+        }
+        else
+        {
+            for (int i = 0; i <= 2; i++)
+            {
+                GameObject button = GameObject.Find("Option" + (i + 1).ToString());
+                button.SetActive(false);
+            }
         }
 
         current = scene;
@@ -85,4 +90,5 @@ public class Scene
     public string question;
     public List<string> optionT = new List<string>();
     public List<Scene> optionD = new List<Scene>();
+    public bool isEnd = false;
 }
