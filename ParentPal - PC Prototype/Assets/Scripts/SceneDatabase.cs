@@ -16,7 +16,9 @@ public class SceneDatabase : MonoBehaviour {
 
     public Button op1;
     public Button op2;
-//---------------------------------------------------------------------------------------------------------------------------------------
+
+    public List<bool> goodDecision = new List<bool>();
+    //---------------------------------------------------------------------------------------------------------------------------------------
     private void Start()
     {
         scene1.question = "Teen sat playing on games console in messy bedroom. Carer knocks on the door and walks in…";
@@ -24,6 +26,8 @@ public class SceneDatabase : MonoBehaviour {
         scene1.optionT.Add("Remain calm & ask teen to be ready to go out in the kitchen soon");
         scene1.optionD.Add(scene2);
         scene1.optionD.Add(scene4);
+        scene1.optionG.Add(false);
+        scene1.optionG.Add(true);
 
 
         scene2.question = "Teen shouts back at carer";
@@ -70,6 +74,7 @@ public class SceneDatabase : MonoBehaviour {
                 GameObject buttonText = GameObject.Find("Option" + (i + 1).ToString() + "Text");
                 buttonText.GetComponent<Text>().text = scene.optionT[i];
                 buttonText.GetComponent<Destination>().nextDest = scene.optionD[i];
+                goodDecision.Add(scene.optionG[i]);
             }
         }
         else
@@ -90,5 +95,6 @@ public class Scene
     public string question;
     public List<string> optionT = new List<string>();
     public List<Scene> optionD = new List<Scene>();
+    public List<bool> optionG = new List<bool>();
     public bool isEnd = false;
 }
