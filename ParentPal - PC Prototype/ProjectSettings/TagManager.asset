@@ -13,8 +13,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - UISkeleton
+  - UIClothes
   - 
   - 
   - 
@@ -40,4 +40,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Skeleton
+    uniqueID: 2728621253
+    locked: 0
+  - name: Hair
+    uniqueID: 280910921
+    locked: 0
+  - name: ClothesUpper
+    uniqueID: 719761265
+    locked: 0
+  - name: ClothesBotton
+    uniqueID: 319889133
     locked: 0

@@ -17,7 +17,7 @@ public class SceneDatabase : MonoBehaviour {
     public Button op1;
     public Button op2;
 
-    public List<bool> goodDecision = new List<bool>();
+    //public List<bool> goodDecision = new List<bool>();
     //---------------------------------------------------------------------------------------------------------------------------------------
     private void Start()
     {
@@ -74,7 +74,7 @@ public class SceneDatabase : MonoBehaviour {
                 GameObject buttonText = GameObject.Find("Option" + (i + 1).ToString() + "Text");
                 buttonText.GetComponent<Text>().text = scene.optionT[i];
                 buttonText.GetComponent<Destination>().nextDest = scene.optionD[i];
-                goodDecision.Add(scene.optionG[i]);
+                //goodDecision.Add(scene.optionG[i]);
             }
         }
         else
