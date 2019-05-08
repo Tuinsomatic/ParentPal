@@ -516,6 +516,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8fead2e87d5cf42aef9ae7bef125a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneDatabase: {fileID: 1468106656}
+  decision: 0
+  thisButton: {fileID: 1033560915}
 --- !u!1 &1033560913
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,6 +854,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8fead2e87d5cf42aef9ae7bef125a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneDatabase: {fileID: 1468106656}
+  decision: 0
+  thisButton: {fileID: 272564149}
 --- !u!1 &1468106651
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,3 +975,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   op1: {fileID: 272564149}
   op2: {fileID: 1033560915}
+  goodDecision: 
