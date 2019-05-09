@@ -13,6 +13,7 @@ public class SceneChanger : MonoBehaviour
     public Button op2;
 
     public List<bool> goodDecision = new List<bool>();
+
     void Start()
     {
         op1.onClick.AddListener(() => ChangeScene(GameObject.Find("Option1Text").GetComponent<Destination>().nextDest));
@@ -23,7 +24,7 @@ public class SceneChanger : MonoBehaviour
         FeedbackTransfer.feedbackData = null;
     }
 
-    public void ChangeScene(Scene scene) //the fn used to change scenes when a button is pressed
+    public void ChangeScene(Scenario scene) //the fn used to change scenes when a button is pressed
     {
         GameObject q = GameObject.Find("Question"); //Question is the Text UI element at the top of the screen
         q.GetComponent<Text>().text = scene.question; //Replace the text on it with the question text from scene
@@ -45,19 +46,19 @@ public class SceneChanger : MonoBehaviour
                 GameObject button = GameObject.Find("Option" + (i + 1).ToString());
                 button.SetActive(false);
                 FeedbackTransfer.feedbackData = goodDecision;
-                FeedbackTransfer.previousScenario = 1;
+                FeedbackTransfer.scenarioNumber = scene.scenarioNumber;
                 SceneManager.LoadScene("Feedback");
             }
         }
-
-        current = scene;
+        database.current = scene;
     }
 }
-public class Scene
+public class Scenario
 {
     public string question;
     public List<string> optionT = new List<string>();
-    public List<Scene> optionD = new List<Scene>();
+    public List<Scenario> optionD = new List<Scenario>();
     public List<bool> optionG = new List<bool>();
     public bool isEnd = false;
+    public int scenarioNumber;
 }

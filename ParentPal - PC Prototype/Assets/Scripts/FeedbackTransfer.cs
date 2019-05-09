@@ -5,5 +5,6 @@ using UnityEngine;
 public static class FeedbackTransfer
 {
     public static List<bool> feedbackData = new List<bool>();
-    public static int previousScenario;
+    public static int scenarioNumber;
+    public static Scenario startScenario;
 }

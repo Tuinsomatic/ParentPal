@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class Destination : MonoBehaviour {
 
-    public SceneDatabase sceneDatabase;
+    public SceneChanger sceneDatabase;
 
-    public Scene nextDest;
+    public Scenario nextDest;
     public bool decision;
 
     public Button thisButton;
