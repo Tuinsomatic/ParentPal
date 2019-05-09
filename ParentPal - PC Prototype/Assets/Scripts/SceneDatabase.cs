@@ -59,12 +59,12 @@ public class SceneDatabase : MonoBehaviour
 
 
         scene6.question = "Carer preparing dinner in the kitchen and can hear the kids start arguing in the lounge over a game, who gets to go first";
-        scene6.optionT.Add("Get mad, threaten to take game away");
         scene6.optionT.Add("Ask children what the problem is");
-        scene6.optionD.Add(scene7);
+        scene6.optionT.Add("Get mad, threaten to take game away");
         scene6.optionD.Add(scene8);
-        scene6.optionG.Add(false);
+        scene6.optionD.Add(scene7);
         scene6.optionG.Add(true);
+        scene6.optionG.Add(false);
         scene6.scenarioNumber = 2;
 
         scene7.question = "Children continue to argue despite threat. Carer takes game away, children run to their rooms crying";

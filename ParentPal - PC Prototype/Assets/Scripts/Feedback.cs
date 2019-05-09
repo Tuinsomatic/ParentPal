@@ -2,16 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Feedback : MonoBehaviour
 {
 
     public List<bool> feedback;
     public GameObject txt;
+    public Button backButton;
 
     // Start is called before the first frame update
     void Start()
     {
+        backButton.onClick.AddListener(() => Back());
+
         feedback = FeedbackTransfer.feedbackData;
 
         if (FeedbackTransfer.scenarioNumber == 1)
@@ -48,5 +52,10 @@ public class Feedback : MonoBehaviour
                 txt.GetComponent<Text>().text = "Be careful! Getting angry/aggressive to children in this situation can scare them or make them retaliate, often worsening te situation. In this case, the children ran upstairs crying in response to your anger.";
             }
         }
+    }
+
+    void Back()
+    {
+        SceneManager.LoadScene("ScenarioSelection");
     }
 }

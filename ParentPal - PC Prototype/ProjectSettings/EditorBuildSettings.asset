@@ -13,11 +13,14 @@ EditorBuildSettings:
     guid: 4fdd98400a89e444ba3c451391865758
   - enabled: 1
     path: Assets/Scenes/Scenario1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 3557c3e41ecfe694794819bcb7cc5d10
   - enabled: 1
     path: Assets/Scenes/Scenario2.unity
     guid: c337c96dbe549924995f58b6b21cab79
   - enabled: 1
     path: Assets/Scenes/Feedback.unity
     guid: cc7fbc8eabcbee149a8d90d4a64d5e94
+  - enabled: 1
+    path: Assets/Scenes/CharacterCreation.unity
+    guid: d05154c847a3f5946b812a8fc69d3b73
   m_configObjects: {}

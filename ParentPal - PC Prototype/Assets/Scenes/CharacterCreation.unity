@@ -122,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 51132742}
   - component: {fileID: 51132743}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: T_Shirt_(Blue)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,8 +177,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 719761265
-  m_SortingLayer: 3
+  m_SortingLayerID: 1661150463
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8c3c1988d4e92224e9eec8422d8029eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1346,7 +1346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1479767066}
   - component: {fileID: 1479767065}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: T_Shirt_(Red)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1387,8 +1387,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 719761265
-  m_SortingLayer: 3
+  m_SortingLayerID: 1661150463
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ff54c13e2f75a6b4b8e39221df916df7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1425,7 +1425,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1523996090}
   - component: {fileID: 1523996091}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: T_shirt_(Green)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1480,8 +1480,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 719761265
-  m_SortingLayer: 3
+  m_SortingLayerID: 1661150463
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 98205fc78ac36f741a3faf151f4d9c3e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1504,7 +1504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1689058387}
   - component: {fileID: 1689058388}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Trousers_#1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1559,8 +1559,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 319889133
-  m_SortingLayer: 4
+  m_SortingLayerID: 1908466087
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0cee31632f096a14e86f9c0b420776b3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1583,7 +1583,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1713540790}
   - component: {fileID: 1713540791}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Trousers_Brown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1638,8 +1638,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 319889133
-  m_SortingLayer: 4
+  m_SortingLayerID: 1908466087
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b5fd93f27ff705f48b060132dbd21592, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2040,7 +2040,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2049592049}
   - component: {fileID: 2049592048}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Trousers_red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2081,8 +2081,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 319889133
-  m_SortingLayer: 4
+  m_SortingLayerID: 1908466087
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6998524f485b80f47bfd320c591a823e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2175,7 +2175,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1566346043
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fadccda0ddff508489368a8a6a99e394, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
