@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class CharacterCreation : MonoBehaviour
 {
     // Start is called before the first frame update
-    Button button;
+    public Button topButton;
 
     public GameObject maleTopOption1;
     public GameObject maleTopOption2;
@@ -20,9 +20,10 @@ public class CharacterCreation : MonoBehaviour
     //public GameObject hairColour;
     //public GameObject skinColour;
 
+    int i;
+
     void Start()
     {
-        maleTopOption1.SetActive(false);
         maleTopOption2.SetActive(false);
         maleTopOption3.SetActive(false);
 
@@ -30,15 +31,41 @@ public class CharacterCreation : MonoBehaviour
         maleBottomOption2.SetActive(false);
         maleBottomOption3.SetActive(false);
 
+        i = 0;
+        ButtonPressCounter();
     }
 
-    void ButtonPress()
+    public void ButtonPressCounter()
     {
-        button.onClick.AddListener(() => ch);
+        topButton.onClick.AddListener(() => TopEdit());
     }
 
-    void CharacterEdit()
+    public void TopEdit()
     {
+
+        if(i == 0)
+        {
+            maleTopOption1.SetActive(true);
+            maleTopOption2.SetActive(false);
+            maleTopOption3.SetActive(false);
+        }
+        if(i == 1)
+        {
+            maleTopOption2.SetActive(true);
+            maleTopOption1.SetActive(false);
+            maleTopOption3.SetActive(false);
+        }
+        if(i == 2)
+        {
+            maleTopOption3.SetActive(true);
+            maleTopOption1.SetActive(false);
+            maleTopOption2.SetActive(false);
+        }
+        if (i > 2)
+        {
+            i = 0;
+        }
+        i++;
 
     }
 }
